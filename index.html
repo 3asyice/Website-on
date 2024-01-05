@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>kevin's knight Known Website</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+::selection {
+  background-color: goldenrod;
+  color:red;
+}
+body {
+  padding:0;
+  background-image: url(https://i.pinimg.com/originals/4a/35/8c/4a358c3454445f9f84561763cfb44d85.gif);
+  color:#0fff00;
+}
+  .main {
+    background-image: url(https://theauthordannykemp.files.wordpress.com/2019/03/gif-social-media-addicting-cigs.gif);
+    padding: 40px;
+    text-align: center;
+    background-color: #111111;
+    color:#0fff00;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    display:none;
+    position: fixed;
+    
+  }
+  
+ 
+
+/* CSS */
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: #0fff00;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  float:right;
+}
+  }
+  h1, p {
+    font-style: 'Times New Roman', Times, serif;
+    color:#0fff00;
+    background-color: #111111;
+    text-align: center;
+  }
+  
+  .homeshow 
+    {
+      background-image: url(https://i.pinimg.com/originals/88/15/63/881563d6444b370fa4ceea0c3183bb4c.gif);
+      padding: 40px;
+      text-align: center;
+      background-color: #111111;
+      color: #0fff00;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      display: none;
+      position: fixed;
+  }
+  .courseshow {
+    background-image: url(https://i.gifer.com/origin/61/6105a3d2805b9503a9e37a44917efe4a_w200.gif);
+    padding: 40px;
+    text-align: center;
+    background-color: #111111;
+    color: #0fff00;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    position: fixed;
+  }
+</style>
+<body>
+  
+   
+  <div class="main"id="main"> 
+  
+    <h1>Contact Me</h1>
+    <a style="color:#0fff00;" href="https://www.facebook.com/gui.abreu.313/">Facebook</a><br>
+    <a style="color:#0fff00;" href="https://www.youtube.com/@guillerme_2005/">YouTube</a><br>
+    <a style="color:#0fff00;" href="https://www.instagram.com/@guillerme_2005">Instagram</a><br>
+    <a style="color:#0fff00;" href="https://wa.me/+19145149353">Whatsapp</a>
+  </div>
+  <div class="homeshow" id="homeshow">
+    <h1>About</h1>
+    <p>I just made this webpage for educational purposes, not to harm anyone's lives</p>
+  </div>
+  <div class="courseshow" id="courseshow">
+    <h1>Curso de Frontend</h1>
+    <p>Aprenda HTML, CSS e JavaScript</p>
+    <p><a style="color:#0fff00;"href="https://anonymousplay3r.github.io/frontend_course/">Webpage do Curso</a></p>
+  </div>
+  
+  
+  
+  <button role="button"class="button-85" onclick="hideShow()">Contact</button>
+  <button class="button-85" onclick="homeShow()">About</button>
+  <button class="button-85" onclick="courseShow()">Course</button>
+  <div>
+    <img height="30%" width="100%" src="../IMG_20231231_213713_311.jpg" alt="" />
+    <h1 style="text-align: center;">KEVIN'S WEBSITE</h1>
+    <p style="text-align: center;">Feel at home <br> while I make <br> you a cup <br>of coffee☕</p>
+  </div>
+  <script>
+    var div = document.getElementById('main');
+    var display = 0;
+    
+    function hideShow()
+    {
+      if(display == 1)
+      {
+        div.style.display = 'block';
+        display = 0;
+      }
+      else {
+        div.style.display = 'none';
+        display = 1;
+      }
+       
+    }
+    var div1 = document.getElementById('homeshow');
+    var display1 = 0;
+    
+    function homeShow()
+    {
+      if (display1 == 1)
+      {
+        div1.style.display = 'block';
+        display1 = 0;
+      }
+      else {
+        div1.style.display = 'none';
+        display1 = 1;
+      }
+    
+    }
+    var div2 = document.getElementById('courseshow');
+    var display2 = 0;
+    
+    function courseShow()
+    {
+      if (display2 == 1)
+      {
+        div2.style.display = 'block';
+        display2 = 0;
+      }
+      else {
+        div2.style.display = 'none';
+        display2 = 1;
+      }
+    
+    }
+  
+  </script>
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
