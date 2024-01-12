@@ -1,232 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="text/html;charset=UTF-8" />
+  <title>HTML</title>
 
-  <title>kevin's knight Known Website</title>
-  
   <!-- HTML -->
-  
+
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="style.css">
 </head>
 <style>
-::selection {
-  background-color: goldenrod;
-  color:red;
-}
-body {
-  padding:0;
-  background-image: url(https://i.pinimg.com/originals/4a/35/8c/4a358c3454445f9f84561763cfb44d85.gif);
-  color:#0fff00;
-}
-  .main {
-    background-image: url(https://theauthordannykemp.files.wordpress.com/2019/03/gif-social-media-addicting-cigs.gif);
-    padding: 40px;
-    text-align: center;
-    background-color: #111111;
-    color:#0fff00;
-    top:0;
-    bottom:0;
-    right:0;
-    left:0;
-    display:none;
-    position: fixed;
-    
-  }
-  
- 
+  html,
+  body {
+    background-color: rgba(255, 255, 255, 1);
+    text-align: justify;
 
-/* CSS */
-.button-85 {
-  padding: 0.6em 2em;
-  border: none;
-  outline: none;
-  color: #0fff00;
-  background: #111;
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
-  border-radius: 10px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
 
-.button-85:before {
-  content: "";
-  background: linear-gradient(
-    45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
-  );
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing-button-85 20s linear infinite;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
-}
+  }
 
-@keyframes glowing-button-85 {
-  0% {
-    background-position: 0 0;
+  .btn-one {
+    background-color: rgba(0, 255, 179, 1);
+    box-shadow: 5px 3px 5px rgba(53, 111, 74, 1);
   }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
 
-.button-85:after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #222;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
-  float:right;
-}
+  .btn-one:hover {
+    background-color: rgba(255, 113, 0, 1);
+    box-shadow: 5px 3px 5px rgba(111, 87, 53, 1)
   }
-  h1, p {
-    font-style: 'Times New Roman', Times, serif;
-    color:#0fff00;
-    background-color: #111111;
-    text-align: center;
+
+  h1,
+  p,
+  button {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+
   }
-  
-  .homeshow 
-    {
-      background-image: url(https://i.pinimg.com/originals/88/15/63/881563d6444b370fa4ceea0c3183bb4c.gif);
-      padding: 40px;
-      text-align: center;
-      background-color: #111111;
-      color: #0fff00;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      display: none;
-      position: fixed;
-  }
-  .courseshow {
-    background-image: url(https://i.gifer.com/origin/61/6105a3d2805b9503a9e37a44917efe4a_w200.gif);
-    padding: 40px;
-    text-align: center;
-    background-color: #111111;
-    color: #0fff00;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+
+  .navbar {
+    float: right;
+    overflow: hidden;
+    position: relative;
+    text-align: justify;
+    justify-content: justify;
+    color: rgba(255, 219, 69, 1);
     display: none;
+  }
+
+  .homebar {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    float: right;
+    padding: 30px;
+    text-align: justify;
     position: fixed;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+    display: none;
+    height: auto;
+    overflow: auto;
+  }
+
+  .contactme {
+    padding: 30px;
+    text-align: justify;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    float: right;
+    padding: 30px;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+    display: none;
+    height: auto;
+    overflow: auto;
+  }
+  
+  .info {
+    padding: 30px;
+    text-align: justify;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    float: right;
+    padding: 30px;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+    display: none;
+    height: auto;
+    overflow: auto;
+  }
+  
+  #chat-container {
+    max-width: 600px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  #chat-messages {
+    height: 300px;
+    overflow-y: scroll;
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  #input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #eee;
+  }
+  
+  #user-input {
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  #send-button {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
   }
 </style>
+<button class="btn-one" style="padding:5px;float: right; transform: rotate(90deg);" onclick="navBar()"><img src="" https://cdn3.iconfinder.com/data/icons/feather-5/24/menu-128.png>lll</button>
+
 <body>
-  
-   
-  <div class="main"id="main"> 
-  
-    <h1>Contact Me</h1>
-    <a style="color:#0fff00;" href="https://www.facebook.com/gui.abreu.313/">Facebook</a><br>
-    <a style="color:#0fff00;" href="https://www.youtube.com/@guillerme_2005/">YouTube</a><br>
-    <a style="color:#0fff00;" href="https://www.instagram.com/@guillerme_2005">Instagram</a><br>
-    <a style="color:#0fff00;" href="https://wa.me/+19145149353">Whatsapp</a>
+  <h1 >BEM-VINDO(A) AO MEU SITE</h1>
+  <div class="navbar" id="navbar">
+    <button class="btn-one" onclick="homeBar()">Home</button> <br>
+    <button class="btn-one" onclick="contactMe()">Contato</button> <br>
+    <button class="btn-one" onclick="infoCon()">chatOnline</button>
+
+
+    <div class="homebar" id="homebar">
+      <button class="btn-one" style="float: right" onclick="homeBar()">Home</button>
+      <h1 style="text-align: center;">OLÁ</h1>
+    </div>
+    <div class="contactme" id="contactme">
+      <button class="btn-one" style="float: right;" onclick="contactMe()">Contato</button>
+      <h1 style="text-align: center;">Contato</h1>
+
+      <p><a href="https://wa.me/555591722661">WhatsApp</a></p>
+    </div>
+    <div class="info" id="info">
+       <button style="float: right;" class="btn-one" onclick="infoCon()">chatOnline</button>
+
+      <h1>Chat</h1>
+      
+      <div id="chat-container">
+  <div id="chat-messages">
+    <!-- Aqui serão exibidas as mensagens -->
   </div>
-  <div class="homeshow" id="homeshow">
-    <h1>About</h1>
-    <p>I just made this webpage for educational purposes, not to harm anyone's lives</p>
+  <div id="input-container">
+    <input type="text" id="user-input" placeholder="Digite sua mensagem">
+    <button id="send-button">Enviar</button>
   </div>
-  <div class="courseshow" id="courseshow">
-    <h1>Curso de Frontend</h1>
-    <p>Aprenda HTML, CSS e JavaScript</p>
-    <p><a style="color:#0fff00;"href="https://anonymousplay3r.github.io/frontend_course/">Webpage do Curso</a></p>
+</div>
+
+      
+    </div>
+
   </div>
 
-  
-  
-  <button role="button"class="button-85" onclick="hideShow()">Contact</button>
-  <button class="button-85" onclick="homeShow()">About</button>
-  <button class="button-85" onclick="courseShow()">Course</button>
-  <div>
-    <h1 style="text-align: center;">GUILHERME'S WEBSITE</h1>
-    <p style="text-align: center;">Feel at home <br> while I make <br> you a cup <br>of coffee☕</p>
-  <audio controls autoplay="true"><source src="https://raw.githubusercontent.com/AnonymousPlay3r/Website-on/main/Modest Mouse - Modest Mouse - Ocean Breathes Salty (Official Music Video).mp3"></audio>
-  </div>
+
+  <!-- Project -->
   <script>
-    var div = document.getElementById('main');
+    var div = document.getElementById('navbar');
     var display = 0;
-    
-    function hideShow()
-    {
-      if(display == 1)
-      {
-        div.style.display = 'block';
+
+    function navBar() {
+      if (display == 1) {
+        div.style.display = "block"
         display = 0;
       }
       else {
-        div.style.display = 'none';
+        div.style.display = 'none'
         display = 1;
       }
-       
     }
-    var div1 = document.getElementById('homeshow');
-    var display1 = 0;
-    
-    function homeShow()
-    {
-      if (display1 == 1)
-      {
-        div1.style.display = 'block';
-        display1 = 0;
+    var home = document.getElementById('homebar');
+    var display = 0;
+
+    function homeBar() {
+      if (display == 1) {
+        home.style.display = 'block'
+        display = 0;
       }
       else {
-        div1.style.display = 'none';
-        display1 = 1;
+        home.style.display = 'none'
+        display = 1;
       }
-    
     }
-    var div2 = document.getElementById('courseshow');
-    var display2 = 0;
-    
-    function courseShow()
-    {
-      if (display2 == 1)
-      {
-        div2.style.display = 'block';
-        display2 = 0;
+
+    var divz = document.getElementById('contactme');
+    var display = 0;
+
+    function contactMe() {
+      if (display == 1) {
+        divz.style.display = 'block'
+        display = 0;
       }
       else {
-        div2.style.display = 'none';
-        display2 = 1;
+        divz.style.display = 'none'
+        display = 1;
       }
-    
     }
-  
+
+    var divx = document.getElementById('info');
+    var display = 0;
+    
+    function infoCon() {
+      if (display == 1) {
+        divx.style.display = 'block'
+        display = 0;
+      }
+      else {
+        divx.style.display = 'none'
+        display = 1;
+      }
+    }
+    
+    
+    
+    document.getElementById('send-button').addEventListener('click', function() {
+      sendMessage();
+    });
+    
+    function sendMessage() {
+      var userInput = document.getElementById('user-input').value;
+      if (userInput.trim() !== '') {
+        var chatMessages = document.getElementById('chat-messages');
+        var messageElement = document.createElement('div');
+        messageElement.textContent = 'Você: ' + userInput;
+        chatMessages.appendChild(messageElement);
+        document.getElementById('user-input').value = '';
+        chatMessages.scrollTop = chatMessages.scrollHeight; // Rola para baixo para exibir a última mensagem
+      }
+    }
   </script>
-  <!-- Project -->
-  <script src="main.js"></script>
 </body>
+
 </html>
