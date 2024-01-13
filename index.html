@@ -35,7 +35,7 @@
 
   h1,
   p,
-  button {
+  button, li, a {
     font-family: 'Times New Roman', Times, serif;
     font-size: 12pt;
 
@@ -83,7 +83,7 @@
     height: auto;
     overflow: auto;
   }
-  
+
   .info {
     padding: 30px;
     text-align: justify;
@@ -100,90 +100,90 @@
     height: auto;
     overflow: auto;
   }
-  
-  #chat-container {
-    max-width: 600px;
-    margin: 20px auto;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden;
-  }
-  
-  #chat-messages {
-    height: 300px;
-    overflow-y: scroll;
-    padding: 10px;
-    background-color: #fff;
-  }
-  
-  #input-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #eee;
-  }
-  
-  #user-input {
-    flex-grow: 1;
-    margin-right: 10px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  
-  #send-button {
-    padding: 8px 15px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
+
+  .faminfo {
+    padding: 30px;
+    text-align: justify;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    float: right;
+    padding: 30px;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+    display: none;
+    height: auto;
+    overflow: auto;
   }
 </style>
 <button class="btn-one" style="padding:5px;float: right; transform: rotate(90deg);" onclick="navBar()"><img src="" https://cdn3.iconfinder.com/data/icons/feather-5/24/menu-128.png>lll</button>
 
 <body>
-  <h1 >BEM-VINDO(A) AO MEU SITE</h1>
+  <h1>BEM-VINDO(A) AO MEU SITE</h1>
   <div class="navbar" id="navbar">
     <button class="btn-one" onclick="homeBar()">Home</button> <br>
     <button class="btn-one" onclick="contactMe()">Contato</button> <br>
-    <button class="btn-one" onclick="infoCon()">chatOnline</button>
+    <button class="btn-one" onclick="infoCon()">chatOnline</button> <br>
+    <button class="btn-one" onclick="famInfo()">Restrito</button>
 
 
     <div class="homebar" id="homebar">
-      <button class="btn-one" style="float: right" onclick="homeBar()">Home</button>
+      <button class="btn-one" style="float: right" onclick="homeBar()">Voltar</button>
       <h1 style="text-align: center;">OLÁ</h1>
     </div>
     <div class="contactme" id="contactme">
-      <button class="btn-one" style="float: right;" onclick="contactMe()">Contato</button>
+      <button class="btn-one" style="float: right;" onclick="contactMe()">Voltar</button>
       <h1 style="text-align: center;">Contato</h1>
 
       <p><a href="https://wa.me/555591722661">WhatsApp</a></p>
     </div>
     <div class="info" id="info">
-       <button style="float: right;" class="btn-one" onclick="infoCon()">chatOnline</button>
+      <button style="float: right;" class="btn-one" onclick="infoCon()">Voltar</button>
 
       <h1>Chat</h1>
-      
-      <div id="chat-container">
-  <div id="chat-messages">
-    <!-- Aqui serão exibidas as mensagens -->
-  </div>
-  <div id="input-container">
-    <input type="text" id="user-input" placeholder="Digite sua mensagem">
-    <button id="send-button">Enviar</button>
-  </div>
-</div>
+      <input type="text" id="messageInput" placeholder="Digite sua mensagem">
+      <button onclick="sendMessage()">ENVIAR</button>
+      <div id="chatMessages"></div>
 
-      
     </div>
+
+    <div class="faminfo" id="faminfo">
+      <button style="float: right;" class="btn-one" onclick="famInfo()">Voltar</button>
+      <h1>PESQUISE POR PESSOAS</h1>
+      <li><a href="#Cassia">Cássia</a></li>
+      <li><a href="#gabih">Maria</a></li>
+      <li><a href="#hello">hello</a></li>
+   <div style=" height: auto;overflow: auto;" id="gabih">
+     
+   
+      <h3>Maria Gabriela de Abreu dos Santos</h3>
+      <p>Carismática, companheira e gente fina.</p>
+      <p style="float: left;">Relacionamento: <br>-Hendrio <br>-Wesley <br>-Gustavo <br>-Kelvin <br> <br>Aniversário: <br>26/06/2006 <br><br>Redes Sociais: <br> -<a href="https://www.facebook.com/profile.php?id=100082318705035">Facebook</a> <br> -<a href="https://www.instagram.com/pandrogaxx?igsh=bTJteTFwMW93N3Jw">Instagram</a> <br> -<a href="https://wa.me/555591220883/">WhatsApp</a> </p>
+      <p style="float: right;">Apelido: <br>-Pandora <br>-Dora <br>-Gabih <br><br><br>Mãe: <br>-Patrícia Braga <br>de Abreu <br>Pai: <br>-Odair José <br> Trindade dos Santos <br>Irmãos: <br>-José Gabriel de <br>Abreu dos Santos <br>-Dara Dornelles <br>-Chaiane Cora</p>
+
+</div>
+<div  style=" height: auto;overflow: auto;"  id="Cassia">
+        
+      <br><br><br>
+      <h3>Cássia Taísa de Araújo</h3>
+      <p >Amigável, sociável e carinhosa</p>
+     <p style="float: right;">Relacionamento: <br>-Jossemar <br>-Rudi <br><br> Mãe: <br>-Marisa Braga <br>Fernandes <br>Pai: <br>-Felizberto Araújo
+     </p>
+     <p style="float:left;">
+     Apelidos: <br>-K7 <br>-Cassinha
+     <br>-Carcinha <br><br>Aniversário: <br>26/05/1995 <br><br>Redes Sociais: <br>-<a href="https://www.facebook.com/profile.php?id=100007583507411">Facebook</a> <br>-<a href="https://www.instagram.com/taisacassia766?igsh=MW00dGVvZGE5eGpqaQ==">Instagram</a> <br>-<a href="https://wa.me/555591587381/">WhatsApp</a></p></div>
+    </div>
+
 
   </div>
 
 
   <!-- Project -->
+  <style src="server.js"></style>
   <script>
+  
     var div = document.getElementById('navbar');
     var display = 0;
 
@@ -227,7 +227,7 @@
 
     var divx = document.getElementById('info');
     var display = 0;
-    
+
     function infoCon() {
       if (display == 1) {
         divx.style.display = 'block'
@@ -238,25 +238,69 @@
         display = 1;
       }
     }
-    
-    
-    
-    document.getElementById('send-button').addEventListener('click', function() {
-      sendMessage();
-    });
-    
-    function sendMessage() {
-      var userInput = document.getElementById('user-input').value;
-      if (userInput.trim() !== '') {
-        var chatMessages = document.getElementById('chat-messages');
-        var messageElement = document.createElement('div');
-        messageElement.textContent = 'Você: ' + userInput;
-        chatMessages.appendChild(messageElement);
-        document.getElementById('user-input').value = '';
-        chatMessages.scrollTop = chatMessages.scrollHeight; // Rola para baixo para exibir a última mensagem
+
+    var diiv = document.getElementById('faminfo');
+    var display = 0;
+
+    function famInfo() {
+      if (display == 1) {
+        diiv.style.display = 'block'
+        display = 0;
+      }
+      else {
+        diiv.style.display = 'none'
+        display = 1;
       }
     }
+
+
+    const socket = new WebSocket('ws://localhost:3000');
+    const chatMessages = document.getElementById('chatMessages');
+
+    socket.onmessage = (event) => {
+      const message = document.createElement('p');
+      message.textContent = `Outro Usuário: ${event.data}`;
+      chatMessages.appendChild(message);
+    };
+
+    function sendMessage() {
+      const messageInput = document.getElementById('messageInput');
+      const message = messageInput.value.trim();
+
+      if (message !== '') {
+        const myMessage = document.createElement('p');
+        myMessage.textContent = `Você: ${message}`;
+        chatMessages.appendChild(myMessage);
+
+        socket.send(message);
+        messageInput.value = '';
+      }
+    }
+    const WebSocket = require('ws');
+const server = new WebSocket.Server({ port: 3000 });
+
+server.on('connection', (socket) => {
+  console.log('Cliente conectado');
+
+  socket.on('message', (message) => {
+    console.log(`Mensagem recebida: ${message}`);
+    // Enviar a mensagem recebida de volta para todos os clientes conectados
+    server.clients.forEach((client) => {
+      if (client !== socket && client.readyState === WebSocket.OPEN) {
+        client.send(message);
+      }
+    });
+  });
+
+  socket.on('close', () => {
+    console.log('Cliente desconectado');
+  });
+});
+
+
+
   </script>
+  <script src="server.js"></script>
 </body>
 
 </html>
